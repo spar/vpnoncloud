@@ -1,6 +1,7 @@
 #!/bin/sh
 apt-get update -y \
     && apt-get install build-essential -y \
+    && apt-get install wget libreadline-dev libssl-dev libncurses5-dev libncursesw5-dev zlib1g-dev -y \
     && wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/archive/v4.29-9680-rtm.tar.gz -O softether.tar.gz \
     && mkdir softether \
     && tar xzvf softether.tar.gz -C softether --strip-components=1 \
